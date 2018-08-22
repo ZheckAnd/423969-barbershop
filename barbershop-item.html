@@ -14,7 +14,7 @@
           <li><a href="info.html">Информация</a></li>
           <li><a href="news.html">Новости</a></li>
           <li><a href="price.html">Прайс-лист</a></li>
-          <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+          <li class="site-navigation-current"><a href="#">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
@@ -87,8 +87,30 @@
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
       <p>Введите свой логин и пароль.</p>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label>
+            <span class="visually-hidden">Логин</span>
+            <input class="login-icon-user" type="text" name="login" placeholder="Логин">
+          </label>
+        </p>
+        <p>
+          <label>
+            <span class="visually-hidden">Пароль</span>
+            <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
+          </label>
+        </p>
+        <p class="login-password-info">
+          <label class="login-checkbox">
+            <input type="checkbox" name="remember" class="visually-hidden">
+            <span class="checkbox-indicator"></span>
+            Запомните меня
+          </label>
+          <a class="restore" href="#">Я забыл пароль!</a>
+        </p>
+        <button class="button" type="submit">Войти</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
